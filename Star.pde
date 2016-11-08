@@ -32,7 +32,7 @@ class Star
     Xg = row.getFloat(13);
     Yg = row.getFloat(14);
     Zg = row.getFloat(15);
-    AbsMag = row.getFloat(16);
+    AbsMag = row.getFloat(12);
     
   }
   
