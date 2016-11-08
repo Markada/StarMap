@@ -5,7 +5,7 @@
 void setup()
 {
   size(800,800);
-  border = width * 0.1f;
+  loadData();
   
 }
 
@@ -41,9 +41,8 @@ void draw()
   {
    for(int y = 0; y < 500*6; y+=100)
    {
-     rect(border - 5, height - border, width - border, height - border);
-     rect(border, border, border, height - border + 5);
+     rect(x,y,50,50);
+     rect(x+50, y+50, 50, 50);
    }
   }
 }
- 
