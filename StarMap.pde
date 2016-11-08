@@ -6,6 +6,7 @@ void setup()
 {
   size(800,800);
   loadData();
+  border = width * 0.1f;
   
 }
 
@@ -30,19 +31,21 @@ void loadData()
 void printStars()
 {
   
-}
-
-void draw()
-{
-  background(0);
   stroke(174,17,191);
   noFill();
-  for(int x = 0; x < 500*6; x+=100) 
+  for(int x = 0; x < 500*6; x+=50) 
   {
-   for(int y = 0; y < 500*6; y+=100)
+   for(int y = 0; y < 500*6; y+=50)
    {
      rect(x,y,50,50);
      rect(x+50, y+50, 50, 50);
    }
   }
+  
+}
+
+void draw()
+{
+  background(0);
+  printStars();
 }
